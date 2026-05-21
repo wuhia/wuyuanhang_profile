@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吴远航 | AI Agent Engineer</title>
+  <meta name="description" content="AI Agent 工程师 · 海外广告代理系统开发者">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23c41e3a'/%3E%3Cstop offset='100%25' stop-color='%23722f37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%23c41e3a'/%3E%3Ccircle cx='50' cy='50' r='5' fill='%23f0e8e9'/%3E%3Ccircle cx='50' cy='18' r='4' fill='%23c41e3a'/%3E%3Ccircle cx='77' cy='33' r='3' fill='%23c41e3a'/%3E%3Ccircle cx='77' cy='67' r='3' fill='%23c41e3a'/%3E%3Ccircle cx='50' cy='82' r='4' fill='%23c41e3a'/%3E%3Ccircle cx='23' cy='67' r='3' fill='%23c41e3a'/%3E%3Ccircle cx='23' cy='33' r='3' fill='%23c41e3a'/%3E%3Cline x1='50' y1='18' x2='50' y2='38' stroke='%23c41e3a' stroke-width='2'/%3E%3Cline x1='77' y1='33' x2='60' y2='44' stroke='%23c41e3a' stroke-width='2'/%3E%3Cline x1='77' y1='67' x2='60' y2='56' stroke='%23c41e3a' stroke-width='2'/%3E%3Cline x1='50' y1='82' x2='50' y2='62' stroke='%23c41e3a' stroke-width='2'/%3E%3Cline x1='23' y1='67' x2='40' y2='56' stroke='%23c41e3a' stroke-width='2'/%3E%3Cline x1='23' y1='33' x2='40' y2='44' stroke='%23c41e3a' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Floating nav -->
+  <nav class="floating-nav" id="floatingNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">DSH</a>
+      <div class="nav-links">
+        <a href="#about" data-section="about">关于</a>
+        <a href="#skills" data-section="skills">技能</a>
+        <a href="#projects" data-section="projects">项目</a>
+        <a href="#gallery" data-section="gallery">图鉴</a>
+        <a href="#achievements" data-section="achievements">成就</a>
+        <a href="#contact" data-section="contact">联系</a>
+      </div>
+      <a href="https://github.com/wuhia" target="_blank" class="nav-github">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-bg"></div>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="particle-field" id="particleField"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-in">
+        <span class="badge-dot"></span>
+        <span>Open to AI Agent Internship</span>
+      </div>
+      <h1 class="hero-title animate-in delay-1">
+        <span class="title-line">你好，我是</span>
+        <span class="title-name">吴远航</span>
+      </h1>
+      <p class="hero-subtitle animate-in delay-2">
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </p>
+      <div class="hero-stats animate-in delay-3">
+        <div class="stat-item">
+          <span class="stat-number" id="statStars">--</span>
+          <span class="stat-label">GitHub Stars</span>
+          <span class="stat-live">LIVE</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" id="statRepos">--</span>
+          <span class="stat-label">开源项目</span>
+          <span class="stat-live">LIVE</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" id="statFollowers">--</span>
+          <span class="stat-label">GitHub Followers</span>
+          <span class="stat-live">LIVE</span>
+        </div>
+      </div>
+      <div class="hero-actions animate-in delay-4">
+        <a href="#projects" class="btn btn-primary">
+          <span>查看项目</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary"><span>联系我</span></a>
+        <a href="https://github.com/wuhia" target="_blank" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator animate-in delay-5">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>向下滚动</span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ABOUT ME</span>
+        <h2 class="section-title">关于我</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card about-intro reveal">
+          <div class="about-avatar">
+            <img
+              src="https://avatars.githubusercontent.com/u/8528535?s=400&u=099c9743e6fa09072956d1810cbae07137e8d740&v=4"
+              alt="吴远航" loading="lazy">
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-text">
+            <h3>AI Agent 工程师 & 开源贡献者</h3>
+            <p>10+年互联网前后端开发， 熟悉AI Agent 系统开发与架构设计，后端开发技术博主。
+            </p>
+            <p>深入研究 Claude Code 51万行源码，提炼 Agent 核心设计模式并应用于多个企业级项目。擅长 Multi-Agent 编排、RAG 系统、MCP 协议等前沿技术。</p>
+            <!-- <div class="about-tags">
+              <span class="tag">🎓 中科大硕士</span>
+              <span class="tag">📝 Nature Computational Science 论文一作（IF=18）</span>
+              <span class="tag">⭐ 1400+ Stars</span>
+              <span class="tag">🔥 1.1w 粉丝</span>
+            </div> -->
+          </div>
+        </div>
+        <div class="about-cards-row">
+          <div class="about-card about-capabilities reveal">
+            <div class="card-icon">⚡</div>
+            <h4>核心能力</h4>
+            <div class="capability-item">
+              <span class="cap-title">Agent 源码级逆向分析</span>
+              <span class="cap-desc">深度解析 51 万行 Claude Code 源码，提炼 Agent Loop / 记忆系统 / 权限沙箱等核心模式</span>
+            </div>
+            <div class="capability-item">
+              <span class="cap-title">Multi-Agent 架构设计</span>
+              <span class="cap-desc">LangGraph Supervisor / Pipeline / 并行编排，实现 4-6 Agent 企业级协作系统</span>
+            </div>
+            <div class="capability-item">
+              <span class="cap-title">全栈工程化落地</span>
+              <span class="cap-desc">Python / TypeScript / Java / Go 多语言实现，配套完整面试资料 + 漫画图解</span>
+            </div>
+          </div>
+          <div class="about-card about-focus reveal">
+            <div class="card-icon">🌍</div>
+            <h4>开源生态</h4>
+            <ul class="focus-list">
+              <li>GitHub 55+ 开源项目，覆盖 Agent 全技术栈</li>
+              <li>10+ 动漫风格技术图解 Skill（哆啦A梦/火影/海贼王…）</li>
+              <li>200+ 篇图文教程 + 面试攻略系列</li>
+              <li>GitHub 1400+ Stars，多个项目被企业采纳用于 Agent 团队培训</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TECH STACK</span>
+        <h2 class="section-title">技术栈</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">🐍</div>
+            <h3>编程语言</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip skill-expert">Python</div>
+            <div class="skill-chip skill-proficient">TypeScript</div>
+            <div class="skill-chip skill-proficient">JavaScript</div>
+            <div class="skill-chip skill-familiar">Java</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">🤖</div>
+            <h3>AI / Agent 框架</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip skill-expert">LangChain</div>
+            <div class="skill-chip skill-expert">LangGraph</div>
+            <div class="skill-chip skill-proficient">LlamaIndex</div>
+            <div class="skill-chip skill-proficient">Dify</div>
+            <div class="skill-chip skill-proficient">Coze</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">⚡</div>
+            <h3>Agent 核心技术</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip skill-expert">Multi-Agent</div>
+            <div class="skill-chip skill-expert">ReAct</div>
+            <div class="skill-chip skill-expert">MCP 协议</div>
+            <div class="skill-chip skill-expert">Function Calling</div>
+            <div class="skill-chip skill-expert">RAG</div>
+            <div class="skill-chip skill-expert">Prompt Engineering</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">🗄️</div>
+            <h3>向量数据库 / 存储</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip skill-proficient">Chroma</div>
+            <div class="skill-chip skill-proficient">FAISS</div>
+            <div class="skill-chip skill-proficient">Milvus</div>
+            <div class="skill-chip skill-proficient">Redis</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">🧠</div>
+            <h3>LLM 基础</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip skill-proficient">Transformer</div>
+            <div class="skill-chip skill-proficient">Attention</div>
+            <div class="skill-chip skill-familiar">SFT</div>
+            <div class="skill-chip skill-familiar">LoRA</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">🛠️</div>
+            <h3>工程化 & AI 编码</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-chip skill-proficient">Docker</div>
+            <div class="skill-chip skill-proficient">FastAPI</div>
+            <div class="skill-chip skill-proficient">Git</div>
+            <div class="skill-chip skill-proficient">CI/CD</div>
+            <div class="skill-chip skill-expert">Claude Code</div>
+            <div class="skill-chip skill-proficient">Cursor</div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-legend reveal">
+        <span class="legend-item"><span class="legend-dot expert"></span>精通</span>
+        <span class="legend-item"><span class="legend-dot proficient"></span>熟练</span>
+        <span class="legend-item"><span class="legend-dot familiar"></span>熟悉</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FEATURED PROJECTS</span>
+        <h2 class="section-title">精选项目</h2>
+        <p class="section-desc">深入 Agent 架构设计与源码分析，从理论到实践的完整闭环</p>
+      </div>
+
+      <!-- Featured Project: Claude Code -->
+      <div class="project-featured reveal">
+        <div class="project-featured-badge">🏆 王牌项目</div>
+        <div class="project-featured-content">
+          <div class="project-featured-info">
+            <h3>Claude Code 源码深度分析与企业级 Agent 框架</h3>
+            <p class="project-date">2026.03 - 至今</p>
+            <p class="project-desc">对 Anthropic Claude Code v2.1.88 的 <strong>51 万行 TypeScript 源码</strong>进行系统性逆向分析，提炼出
+              Agent Loop、分层记忆系统、多 Agent 协同、权限沙箱、Prompt Cache 等 <strong>5 大核心设计模式</strong>。基于分析成果开发企业级 miniClaudeCode 框架。
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item"><span class="highlight-number">51万</span><span
+                  class="highlight-label">行源码分析</span></div>
+              <div class="highlight-item"><span class="highlight-number">5000</span><span
+                  class="highlight-label">行框架代码</span></div>
+              <div class="highlight-item"><span class="highlight-number" id="guideV1Stars">301</span><span
+                  class="highlight-label">Stars (V1)</span></div>
+              <div class="highlight-item"><span class="highlight-number">200+</span><span
+                  class="highlight-label">节图文教程</span></div>
+            </div>
+            <div class="project-tech">
+              <span>Python</span><span>TypeScript</span><span>Agent
+                Loop</span><span>分层记忆</span><span>MCP</span><span>多模型适配</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/wuhia/claude-code-complete-guide" target="_blank" class="project-link">📖
+                源码指南 V1</a>
+              <a href="https://github.com/wuhia/claude-code-complete-guide_v2" target="_blank" class="project-link">📖
+                源码指南 V2</a>
+              <a href="https://github.com/wuhia/miniClaudeCode" target="_blank" class="project-link">⚙️
+                miniClaudeCode</a>
+              <a href="https://github.com/wuhia/claude-code-comics" target="_blank" class="project-link">🎨 漫画图解</a>
+            </div>
+          </div>
+          <div class="project-featured-visual">
+            <div class="project-image-stack">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/claude-code-complete-guide/main/docs/_media/comic-architecture-overview.png"
+                alt="Claude Code 架构漫画" class="stack-img stack-1" loading="lazy">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/claude-code-complete-guide/main/docs/_media/comic-agent-swarm.png"
+                alt="Agent Swarm 漫画" class="stack-img stack-2" loading="lazy">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/claude-code-complete-guide/main/docs/_media/comic-permissions.png"
+                alt="权限系统漫画" class="stack-img stack-3" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Showcase Cards with Images -->
+      <div class="projects-showcase">
+
+        <!-- AIOps -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="aiops-visual">
+              <div class="pipeline-flow">
+                <div class="pipeline-node node-alert">
+                  <span class="node-icon">🚨</span>
+                  <span class="node-label">告警 Agent</span>
+                  <span class="node-sub">时序分析·降噪80%+</span>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-node node-rca">
+                  <span class="node-icon">🔍</span>
+                  <span class="node-label">根因 Agent</span>
+                  <span class="node-sub">知识图谱推理</span>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-node node-heal">
+                  <span class="node-icon">🔧</span>
+                  <span class="node-label">自愈 Agent</span>
+                  <span class="node-sub">自动重启·扩容</span>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-node node-approve">
+                  <span class="node-icon">✅</span>
+                  <span class="node-label">审批 Agent</span>
+                  <span class="node-sub">Human-in-loop</span>
+                </div>
+              </div>
+              <div class="aiops-metrics">
+                <div class="metric"><span class="metric-val">80%+</span><span class="metric-key">告警降噪率</span></div>
+                <div class="metric"><span class="metric-val">40min→5min</span><span class="metric-key">故障恢复时间</span>
+                </div>
+                <div class="metric"><span class="metric-val">85%+</span><span class="metric-key">根因定位准确率</span></div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/multi-agent-aiops" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="multi-agent-aiops">⭐ 13</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>多 Agent 智能运维系统（AIOps）</h3>
+            <p>4-Agent Pipeline + 并行编排架构：<strong>监控告警 Agent</strong>（Prometheus + 智能降噪）→ <strong>根因分析 Agent</strong>（RAG
+              检索历史故障库）→ <strong>故障自愈 Agent</strong>（自动重启/扩容/回滚）→ <strong>变更审批 Agent</strong>（Human-in-the-loop）。借鉴
+              Claude Code 权限沙箱设计实现分层权限链。</p>
+            <div class="showcase-kpis">
+              <div class="kpi-item"><span class="kpi-num">80%+</span><span class="kpi-label">告警降噪</span></div>
+              <div class="kpi-item"><span class="kpi-num">5min</span><span class="kpi-label">故障恢复</span></div>
+              <div class="kpi-item"><span class="kpi-num">85%+</span><span class="kpi-label">根因准确率</span></div>
+            </div>
+            <div class="project-tech">
+              <span>LangGraph</span><span>RAG</span><span>Prometheus</span><span>Docker</span><span>Langfuse</span>
+            </div>
+            <a href="https://github.com/wuhia/multi-agent-aiops" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/multi-agent-aiops</a>
+          </div>
+        </div>
+
+        <!-- NoteKing Pro 会议 Agent -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image">
+            <img
+              src="https://raw.githubusercontent.com/wuhia/noteking-pro/main/demos/openclaw_meeting/preview/page_01.png"
+              alt="NoteKing Pro 会议纪要输出" loading="lazy">
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/noteking-pro" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="noteking-pro">⭐ 8</span>
+              <span class="showcase-lang">Python · LangGraph · Whisper</span>
+            </div>
+            <h3>NoteKing Pro — 智能会议整理 Agent</h3>
+            <p>从视频笔记工具（V1，30+ 平台）演进到<strong>会议整理多 Agent 系统（V3）</strong>，基于 LangGraph Supervisor 模式编排 4 个
+              Agent：<strong>转录 Agent</strong>（Whisper + 说话人分离）→ <strong>分析 Agent</strong>（决策/行动项提取）→ <strong>整理
+                Agent</strong>（结构化会议纪要）→ <strong>跟进 Agent</strong>（MCP 对接日历/邮件/Notion）。借鉴 Claude Code 分层记忆设计实现跨会议上下文关联。
+            </p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Whisper</span><span>pyannote</span><span>MCP</span><span>Redis</span>
+            </div>
+            <div class="showcase-links-row">
+              <a href="https://github.com/wuhia/noteking-pro" target="_blank" class="showcase-repo-link">→ NoteKing
+                Pro（会议版）</a>
+              <a href="https://github.com/wuhia/noteking" target="_blank" class="showcase-repo-link">→
+                NoteKing（视频版）</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 商旅 Agent -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image">
+            <img src="https://raw.githubusercontent.com/wuhia/travel-agent-guide/main/comics/07-商旅场景.png"
+              alt="商旅Agent场景漫画" loading="lazy">
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/travel-agent-guide" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="travel-agent-guide">⭐ 29</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>商旅 Agent — 企业级智能旅行规划系统</h3>
+            <p>企业级 AI Agent 学习 + 实战 + 面试一体化项目。多 Agent 协作完成差旅申请→行程规划→订票→费用报销全流程，Python/Java/Go 三语言实现，配套 200+ 面试题、STAR
+              面试稿、哆啦A梦漫画图解。</p>
+            <div class="project-tech"><span>LangGraph</span><span>Multi-Agent</span><span>MCP</span><span>FastAPI</span>
+            </div>
+            <a href="https://github.com/wuhia/travel-agent-guide" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/travel-agent-guide</a>
+          </div>
+        </div>
+
+        <!-- Agent 知识库 -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="knowledge-visual">
+              <div class="kb-flow">
+                <div class="kb-step">
+                  <div class="kb-icon">📄</div>
+                  <div class="kb-label">文档解析 Agent</div>
+                  <div class="kb-desc">PDF/Word/网页 → 结构化文本</div>
+                </div>
+                <div class="kb-arrow">↓</div>
+                <div class="kb-step">
+                  <div class="kb-icon">🧠</div>
+                  <div class="kb-label">知识抽取 Agent</div>
+                  <div class="kb-desc">实体识别 + 关系抽取 + 知识图谱</div>
+                </div>
+                <div class="kb-arrow">↓</div>
+                <div class="kb-step">
+                  <div class="kb-icon">💬</div>
+                  <div class="kb-label">智能问答 Agent</div>
+                  <div class="kb-desc">RAG 检索 + LLM 生成</div>
+                </div>
+                <div class="kb-arrow">↓</div>
+                <div class="kb-step">
+                  <div class="kb-icon">🔄</div>
+                  <div class="kb-label">增量更新 Agent</div>
+                  <div class="kb-desc">变更检测 + 自动同步</div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/agent-knowledge-hub" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="agent-knowledge-hub">⭐ 16</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>AgentKnowledgeHub — 企业级多 Agent 知识管理系统</h3>
+            <p>4 个 AI Agent 分工协作，完成企业知识的全生命周期管理：<strong>文档解析</strong>（PDF/Word/网页）→ <strong>知识抽取</strong>（实体识别 + 关系图谱）→
+              <strong>智能问答</strong>（RAG + LLM）→ <strong>增量更新</strong>（变更检测 + 自动同步）。Python/Java/Go 三语言实现，配套完整面试材料。
+            </p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>RAG</span><span>Chroma</span><span>FastAPI</span><span>Docker</span>
+            </div>
+            <a href="https://github.com/wuhia/agent-knowledge-hub" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/agent-knowledge-hub</a>
+          </div>
+        </div>
+
+        <!-- AI Agent 面试全攻略 -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image">
+            <img src="https://raw.githubusercontent.com/wuhia/ai-agent-interview-guide/main/comics/04-多Agent协作.png"
+              alt="多Agent协作漫画" loading="lazy">
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/ai-agent-interview-guide" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="ai-agent-interview-guide">⭐ 285</span>
+              <span class="showcase-lang">Python / Java / Go</span>
+            </div>
+            <h3>AI Agent 面试全攻略</h3>
+            <p>从零到 Offer 的完整面试指南，包含 200+ 面试题、企业级项目（Python/Java/Go 三语言）、简历模板、STAR 面试稿、哆啦A梦漫画图解。</p>
+            <div class="project-tech"><span>LangGraph</span><span>RAG</span><span>MCP</span><span>VitePress</span></div>
+            <a href="https://github.com/wuhia/ai-agent-interview-guide" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/ai-agent-interview-guide</a>
+          </div>
+        </div>
+
+        <!-- Learn MiniMind -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image">
+            <img src="https://raw.githubusercontent.com/wuhia/learn-minimind/main/assets/comics/01-llm-overview.png"
+              alt="LLM 概览漫画" loading="lazy">
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/learn-minimind" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="learn-minimind">⭐ 120</span>
+              <span class="showcase-lang">LLM / Transformer</span>
+            </div>
+            <h3>Learn MiniMind 大模型学习指南</h3>
+            <p>22 节课彻底搞懂大语言模型训练全流程：Tokenizer → Embedding → Attention → SFT → LoRA → RLHF。配套哆啦A梦风格漫画图解，GitHub 120 Stars。
+            </p>
+            <div class="project-tech"><span>Transformer</span><span>SFT</span><span>LoRA</span><span>RLHF</span></div>
+            <a href="https://github.com/wuhia/learn-minimind" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/learn-minimind</a>
+          </div>
+        </div>
+
+        <!-- 多Agent智能会议助手 -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="meeting-visual">
+              <div class="meeting-title">🎙️ 5-Agent 会议全流程自动化</div>
+              <div class="meeting-pipeline">
+                <div class="mp-step mp-step-1">
+                  <div class="mp-num">①</div>
+                  <div class="mp-content">
+                    <div class="mp-name">Transcription Agent</div>
+                    <div class="mp-desc">语音转文字 + 说话人分离</div>
+                  </div>
+                </div>
+                <div class="mp-step mp-step-2">
+                  <div class="mp-num">②</div>
+                  <div class="mp-content">
+                    <div class="mp-name">Summary Agent</div>
+                    <div class="mp-desc">会议摘要 + 关键决策提炼</div>
+                  </div>
+                </div>
+                <div class="mp-step mp-step-3">
+                  <div class="mp-num">③</div>
+                  <div class="mp-content">
+                    <div class="mp-name">Action Agent</div>
+                    <div class="mp-desc">待办事项 + 责任人分配</div>
+                  </div>
+                </div>
+                <div class="mp-step mp-step-4">
+                  <div class="mp-num">④</div>
+                  <div class="mp-content">
+                    <div class="mp-name">Insight Agent</div>
+                    <div class="mp-desc">风险识别 + 情绪分析</div>
+                  </div>
+                </div>
+                <div class="mp-step mp-step-5">
+                  <div class="mp-num">⑤</div>
+                  <div class="mp-content">
+                    <div class="mp-name">Follow-up Agent</div>
+                    <div class="mp-desc">MCP 对接日历/邮件/Notion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/multi-agent-meeting-assistant" target="_blank"
+                class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="multi-agent-meeting-assistant">⭐ 7</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>多 Agent 智能会议助手系统</h3>
+            <p>企业级 <strong>5-Agent 会议全流程自动化系统</strong>，Pipeline + 并行编排。从录音到会议纪要、待办清单、风险预警、自动跟进，全程无需人工干预。三语言完整实现，配套 50+
+              八股文、STAR 话术、简历模板、30+ 面试问答。</p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Whisper</span><span>MCP</span><span>Pipeline</span><span>并行编排</span>
+            </div>
+            <a href="https://github.com/wuhia/multi-agent-meeting-assistant" target="_blank"
+              class="showcase-repo-link">→ github.com/wuhia/multi-agent-meeting-assistant</a>
+          </div>
+        </div>
+
+        <!-- 智能客服多Agent -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="cs-visual">
+              <div class="cs-title">💬 智能客服 Supervisor 架构</div>
+              <div class="cs-arch">
+                <div class="cs-supervisor">
+                  <span class="cs-sup-icon">🎯</span>
+                  <span class="cs-sup-label">Supervisor Agent</span>
+                  <span class="cs-sup-sub">意图识别 · 路由分发</span>
+                </div>
+                <div class="cs-agents-row">
+                  <div class="cs-agent cs-a1">
+                    <span>🔍</span>
+                    <span>FAQ Agent</span>
+                    <span class="cs-a-sub">知识库检索</span>
+                  </div>
+                  <div class="cs-agent cs-a2">
+                    <span>📋</span>
+                    <span>工单 Agent</span>
+                    <span class="cs-a-sub">自动创建跟进</span>
+                  </div>
+                  <div class="cs-agent cs-a3">
+                    <span>💰</span>
+                    <span>退款 Agent</span>
+                    <span class="cs-a-sub">规则审批流</span>
+                  </div>
+                  <div class="cs-agent cs-a4">
+                    <span>👤</span>
+                    <span>转人工 Agent</span>
+                    <span class="cs-a-sub">复杂问题升级</span>
+                  </div>
+                </div>
+                <div class="cs-features">
+                  <span class="cs-feat">分层记忆</span>
+                  <span class="cs-feat">全链路追踪</span>
+                  <span class="cs-feat">Langfuse监控</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/smart-cs-multi-agent" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="smart-cs-multi-agent">⭐ 25</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>智能客服多 Agent 系统</h3>
+            <p>企业级面试项目全攻略，面向金融/电商场景。<strong>Supervisor 编排</strong>多个专业
+              Agent（FAQ检索、工单创建、退款审批、转人工），配合<strong>分层记忆</strong>实现跨会话上下文保持，Langfuse 全链路追踪。Python/Java/Go 三语言完整实现。</p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Supervisor</span><span>MCP</span><span>Redis</span><span>Langfuse</span>
+            </div>
+            <a href="https://github.com/wuhia/smart-cs-multi-agent" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/smart-cs-multi-agent</a>
+          </div>
+        </div>
+
+        <!-- 多Agent电商推荐 -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="ecom-visual">
+              <div class="ecom-title">🛒 电商推荐 Supervisor 模式</div>
+              <div class="ecom-flow">
+                <div class="ecom-input">
+                  <span class="ecom-user">👤 用户请求</span>
+                  <span class="ecom-arrow-down">↓</span>
+                </div>
+                <div class="ecom-supervisor-box">
+                  <span class="ecom-sup">🎯 Supervisor Agent</span>
+                  <span class="ecom-sup-sub">统一编排 · 结果聚合</span>
+                </div>
+                <div class="ecom-parallel">
+                  <div class="ecom-agent ecom-rec">
+                    <span>🎯</span><span>推荐 Agent</span>
+                    <span class="ecom-sub">协同过滤 + 内容推荐</span>
+                  </div>
+                  <div class="ecom-agent ecom-copy">
+                    <span>✍️</span><span>文案 Agent</span>
+                    <span class="ecom-sub">个性化营销文案</span>
+                  </div>
+                  <div class="ecom-agent ecom-inv">
+                    <span>📦</span><span>库存 Agent</span>
+                    <span class="ecom-sub">实时校验缺货剔除</span>
+                  </div>
+                </div>
+                <div class="ecom-tag-row">
+                  <span class="ecom-tag">asyncio 并行</span>
+                  <span class="ecom-tag">Redis Feature Store</span>
+                  <span class="ecom-tag">A/B Testing</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/multi-agent-ecommerce-system" target="_blank"
+                class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="multi-agent-ecommerce-system">⭐ 66</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>多 Agent 电商推荐与营销系统</h3>
+            <p>Supervisor 统一编排三个并行 Agent：<strong>推荐 Agent</strong>（协同过滤 + 内容推荐）+ <strong>文案
+                Agent</strong>（根据用户画像生成个性化营销文案）+ <strong>库存 Agent</strong>（实时校验缺货自动剔除）。asyncio 并行执行，Redis Feature Store
+              缓存用户特征，支持 A/B Testing。Python/Java/Go 三语言实现，GitHub 66 Stars。</p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Supervisor</span><span>Redis</span><span>asyncio</span><span>FastAPI</span>
+            </div>
+            <a href="https://github.com/wuhia/multi-agent-ecommerce-system" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/multi-agent-ecommerce-system</a>
+          </div>
+        </div>
+
+        <!-- 漫画风格图解生成器 -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image">
+            <img
+              src="https://raw.githubusercontent.com/wuhia/comic-guide-skill/main/examples/openclaw-guide/styles-preview/chibi-openclaw.png"
+              alt="哆啦A梦风格漫画" loading="lazy">
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/comic-guide-skill" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="comic-guide-skill">⭐ 20</span>
+              <span class="showcase-lang">AI Skill · Cursor · Claude Code</span>
+            </div>
+            <h3>漫画风格图解生成器 Skill</h3>
+            <p>支持 <strong>10+ 动漫风格</strong>（哆啦A梦 / 火影忍者 / 海贼王 / 龙珠 / 国风 / 吉卜力…），一键把技术文档、代码架构转化为精美漫画图解。兼容 Cursor / Claude
+              Code / OpenClaw，所有项目的漫画图解均由此 Skill 生成。</p>
+            <div class="showcase-style-gallery">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/comic-guide-skill/main/examples/openclaw-guide/styles-preview/naruto-openclaw.png"
+                alt="火影风格" loading="lazy">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/comic-guide-skill/main/examples/openclaw-guide/styles-preview/onepiece-openclaw.png"
+                alt="海贼王风格" loading="lazy">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/comic-guide-skill/main/examples/openclaw-guide/styles-preview/dragonball-openclaw.png"
+                alt="龙珠风格" loading="lazy">
+              <img
+                src="https://raw.githubusercontent.com/wuhia/comic-guide-skill/main/examples/openclaw-guide/styles-preview/guofeng-openclaw.png"
+                alt="国风风格" loading="lazy">
+            </div>
+            <div class="project-tech"><span>Cursor Skill</span><span>Claude Code</span><span>Prompt
+                Engineering</span><span>10+ 风格</span></div>
+            <a href="https://github.com/wuhia/comic-guide-skill" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/comic-guide-skill</a>
+          </div>
+        </div>
+
+        <!-- 多Agent旅游行程规划 -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="travel-visual">
+              <div class="travel-title">✈️ 6-Agent 旅游规划系统</div>
+              <div class="travel-pipeline">
+                <div class="tv-node tv-pref">
+                  <span class="tv-icon">🎯</span>
+                  <span class="tv-label">Preference Agent</span>
+                  <span class="tv-sub">收集偏好·预算·风格</span>
+                </div>
+                <div class="tv-arrow">↓</div>
+                <div class="tv-parallel-label">⚡ 三 Agent 并行搜索（延迟降低 67%）</div>
+                <div class="tv-parallel">
+                  <div class="tv-node tv-flight">
+                    <span class="tv-icon">✈️</span>
+                    <span class="tv-label">航班 Agent</span>
+                    <span class="tv-sub">比价·最优路线</span>
+                  </div>
+                  <div class="tv-node tv-hotel">
+                    <span class="tv-icon">🏨</span>
+                    <span class="tv-label">酒店 Agent</span>
+                    <span class="tv-sub">匹配·评分筛选</span>
+                  </div>
+                  <div class="tv-node tv-act">
+                    <span class="tv-icon">🎡</span>
+                    <span class="tv-label">活动 Agent</span>
+                    <span class="tv-sub">景点·餐厅推荐</span>
+                  </div>
+                </div>
+                <div class="tv-arrow">↓</div>
+                <div class="tv-node tv-budget">
+                  <span class="tv-icon">💰</span>
+                  <span class="tv-label">预算 Agent</span>
+                  <span class="tv-sub">超预算→渐进式降级（最多3轮）</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/wuhia/multi-agent-travel-planner" target="_blank"
+                class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars" data-repo="multi-agent-travel-planner">⭐ 25</span>
+              <span class="showcase-lang">Python · Java · Go</span>
+            </div>
+            <h3>多 Agent 智能旅游行程规划系统</h3>
+            <p><strong>6 个 Agent 协作</strong>完成旅游规划全流程：偏好收集 → 航班/酒店/活动<strong>三 Agent 并行搜索</strong>（延迟降低 67%）→
+              预算控制（超预算自动触发<strong>渐进式降级循环</strong>，最多 3 轮调整）→ 行程生成。Python/Java/Go 三语言实现，配套面试全套资料（八股文 + STAR + 34 道面试题）。
+            </p>
+            <div class="showcase-kpis">
+              <div class="kpi-item"><span class="kpi-num">6</span><span class="kpi-label">个 Agent</span></div>
+              <div class="kpi-item"><span class="kpi-num">67%↓</span><span class="kpi-label">搜索延迟</span></div>
+              <div class="kpi-item"><span class="kpi-num">34+</span><span class="kpi-label">面试题</span></div>
+            </div>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Pipeline</span><span>并行编排</span><span>FastAPI</span><span>Streamlit</span>
+            </div>
+            <a href="https://github.com/wuhia/multi-agent-travel-planner" target="_blank" class="showcase-repo-link">→
+              github.com/wuhia/multi-agent-travel-planner</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compact Project Grid -->
+      <h3 class="subsection-title reveal">更多开源项目</h3>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-repo="learn-MedicalGPT">
+          <div class="project-card-header">
+            <div class="project-card-icon">🏥</div>
+            <span class="card-stars">⭐ <span class="live-stars">45</span></span>
+          </div>
+          <h3>MedicalGPT 医疗大模型指南</h3>
+          <p>20节课搞懂医疗大模型训练全流程：PT/SFT/LoRA/RLHF/DPO/GRPO。</p>
+          <div class="project-tech"><span>SFT</span><span>LoRA</span><span>RLHF</span><span>DPO</span></div>
+          <a href="https://github.com/wuhia/learn-MedicalGPT" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="ClaudeCode-Source-Analysis">
+          <div class="project-card-header">
+            <div class="project-card-icon">🔍</div>
+            <span class="card-stars">⭐ <span class="live-stars">44</span></span>
+          </div>
+          <h3>Claude Code 源码解析报告</h3>
+          <p>基于 2026 年 3 月 npm source map 泄漏事件的完整技术分析。</p>
+          <div class="project-tech"><span>TypeScript</span><span>逆向分析</span><span>架构</span></div>
+          <a href="https://github.com/wuhia/ClaudeCode-Source-Analysis" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="learn-minimind-multimodal">
+          <div class="project-card-header">
+            <div class="project-card-icon">👁️</div>
+            <span class="card-stars">⭐ <span class="live-stars">32</span></span>
+          </div>
+          <h3>MiniMind-V 多模态学习指南</h3>
+          <p>20节课 + 278道面试题 + STAR面试稿 + 哆啦A梦漫画。</p>
+          <div class="project-tech"><span>多模态</span><span>Vision</span><span>LLM</span></div>
+          <a href="https://github.com/wuhia/learn-minimind-multimodal" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="learn-nano-vllm">
+          <div class="project-card-header">
+            <div class="project-card-icon">🚀</div>
+            <span class="card-stars">⭐ <span class="live-stars">22</span></span>
+          </div>
+          <h3>nano-vllm 面试学习指南</h3>
+          <p>20节课程 + 72道面试八股文 + STAR面试法 + 哆啦A梦漫画。</p>
+          <div class="project-tech"><span>vLLM</span><span>推理优化</span><span>部署</span></div>
+          <a href="https://github.com/wuhia/learn-nano-vllm" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="learn-nanobot">
+          <div class="project-card-header">
+            <div class="project-card-icon">🤖</div>
+            <span class="card-stars">⭐ <span class="live-stars">68</span></span>
+          </div>
+          <h3>Learn Nanobot Agent 指南</h3>
+          <p>17章深度教程、134道八股文、哆啦A梦漫画图解、STAR面试法。</p>
+          <div class="project-tech"><span>Agent Loop</span><span>Memory</span><span>MCP</span></div>
+          <a href="https://github.com/wuhia/learn-nanobot" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="miniClaudeCode">
+          <div class="project-card-header">
+            <div class="project-card-icon">⚙️</div>
+            <span class="card-stars">⭐ <span class="live-stars">52</span></span>
+          </div>
+          <h3>miniClaudeCode 框架</h3>
+          <p>从 50 万行蒸馏到 ~1000 行的 Claude Code 核心 Agent 架构最小复现。</p>
+          <div class="project-tech"><span>Python</span><span>Agent Loop</span><span>Memory</span></div>
+          <a href="https://github.com/wuhia/miniClaudeCode" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="claude-code-pet-system-analysis">
+          <div class="project-card-header">
+            <div class="project-card-icon">🐾</div>
+            <span class="card-stars">⭐ <span class="live-stars">32</span></span>
+          </div>
+          <h3>Claude Code 宠物系统解析</h3>
+          <p>18种宠物全图鉴、进化系统、稀有度分析，深度解析 BUDDY 系统。</p>
+          <div class="project-tech"><span>TypeScript</span><span>源码分析</span></div>
+          <a href="https://github.com/wuhia/claude-code-pet-system-analysis" target="_blank"
+            class="card-link-overlay"></a>
+        </div>
+
+        <div class="project-card reveal" data-repo="noteking">
+          <div class="project-card-header">
+            <div class="project-card-icon">📒</div>
+            <span class="card-stars">⭐ <span class="live-stars">12</span></span>
+          </div>
+          <h3>NoteKing 视频笔记工具</h3>
+          <p>一键把视频变精美 PDF 讲义，支持 30+ 平台、13 种模板。</p>
+          <div class="project-tech"><span>Python</span><span>LaTeX</span><span>MCP</span></div>
+          <a href="https://github.com/wuhia/noteking" target="_blank" class="card-link-overlay"></a>
+        </div>
+
+      </div>
+
+      <div class="projects-more reveal">
+        <a href="https://github.com/wuhia?tab=repositories&sort=stargazers" target="_blank" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          查看全部 <span id="totalReposBtn">55+</span> 项目
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY ==================== -->
+  <section class="section section-dark" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PROJECT GALLERY</span>
+        <h2 class="section-title">项目图鉴</h2>
+        <p class="section-desc">哆啦A梦风格漫画图解 · 让复杂技术一目了然</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item gallery-wide">
+          <img
+            src="https://raw.githubusercontent.com/wuhia/claude-code-complete-guide/main/docs/_media/comic-architecture-overview.png"
+            alt="Claude Code 架构总览" loading="lazy">
+          <div class="gallery-caption">Claude Code 架构总览</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://raw.githubusercontent.com/wuhia/ai-agent-interview-guide/main/comics/01-什么是Agent.png"
+            alt="什么是Agent" loading="lazy">
+          <div class="gallery-caption">什么是 Agent</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://raw.githubusercontent.com/wuhia/ai-agent-interview-guide/main/comics/02-ReAct循环.png"
+            alt="ReAct循环" loading="lazy">
+          <div class="gallery-caption">ReAct 循环</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://raw.githubusercontent.com/wuhia/ai-agent-interview-guide/main/comics/03-RAG流程.png"
+            alt="RAG流程" loading="lazy">
+          <div class="gallery-caption">RAG 流程</div>
+        </div>
+        <div class="gallery-item gallery-wide">
+          <img
+            src="https://raw.githubusercontent.com/wuhia/claude-code-complete-guide/main/docs/_media/comic-agent-swarm.png"
+            alt="Agent Swarm 多Agent协同" loading="lazy">
+          <div class="gallery-caption">Agent Swarm 多Agent协同</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://raw.githubusercontent.com/wuhia/learn-minimind/main/assets/comics/06-self-attention.png"
+            alt="Self-Attention 机制" loading="lazy">
+          <div class="gallery-caption">Self-Attention 机制</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://raw.githubusercontent.com/wuhia/learn-nanobot/main/comics/04-memory-system.png" alt="记忆系统"
+            loading="lazy">
+          <div class="gallery-caption">Agent 记忆系统</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://raw.githubusercontent.com/wuhia/claude-code-complete-guide/main/docs/_media/comic-performance.png"
+            alt="性能优化" loading="lazy">
+          <div class="gallery-caption">性能优化策略</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://raw.githubusercontent.com/wuhia/learn-nanobot/main/comics/05-mcp-protocol.png" alt="MCP协议"
+            loading="lazy">
+          <div class="gallery-caption">MCP 协议</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <!-- <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ACHIEVEMENTS</span>
+        <h2 class="section-title">荣誉成就</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">📄</div>
+          <h3>Nature Computational Science</h3>
+          <p>一作论文 · IF = 18</p>
+          <span class="achievement-badge">顶刊一作</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🏅</div>
+          <h3>全国大学生数学竞赛</h3>
+          <p>一等奖</p>
+          <span class="achievement-badge">国家级</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🎖️</div>
+          <h3>学业奖学金一等奖</h3>
+          <p>山东大学 & 中国科学技术大学</p>
+          <span class="achievement-badge">双校奖学金</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">💡</div>
+          <h3>知识产权</h3>
+          <p>计算机软件著作权 · 发明设计专利</p>
+          <span class="achievement-badge">原创成果</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">⭐</div>
+          <h3>GitHub Starstruck x2</h3>
+          <p id="achieveGithub">1434 Stars · 221 Followers · 55+ Repos</p>
+          <span class="achievement-badge">开源影响力</span>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">📱</div>
+          <h3>小红书技术博主</h3>
+          <p>1.1w 粉丝 · AI/Agent 技术分享</p>
+          <span class="achievement-badge">技术传播</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">联系我</h2>
+        <!-- <p class="section-desc">正在寻找 AI Agent 方向的日常实习机会，可线下实习六个月以上</p> -->
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:wuyuanhang23@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <h3>邮箱</h3>
+          <p>wuyuanhang23@gmail.com</p>
+        </a>
+        <a href="https://github.com/wuhia" target="_blank" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </div>
+          <h3>GitHub</h3>
+          <p>github.com/wuhia</p>
+        </a>
+        <!-- <a href="https://www.xiaohongshu.com/user/profile/bcefghj" target="_blank" class="contact-card reveal">
+          <div class="contact-icon xiaohongshu-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm-2-8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+            </svg>
+          </div>
+          <h3>小红书</h3>
+          <p>@bcefghj · 1.1w+ 粉丝</p>
+        </a> -->
+        <div class="contact-card contact-wechat reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.062-6.122zM14.84 13.186c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z" />
+            </svg>
+          </div>
+          <h3>微信</h3>
+          <p>wyh13413665186</p>
+        </div>
+      </div>
+      <!-- <div class="contact-cta reveal">
+        <div class="cta-card">
+          <h3>正在寻找 AI Agent 实习机会</h3>
+          <p>如果您的团队正在寻找对 Agent 架构有深入理解的实习生，欢迎联系我！</p>
+          <div class="cta-info">
+            <span>📍 可武汉线下到岗</span>
+            <span>⏰ 可线下实习六个月以上</span>
+            <span>🎓 中科大在读硕士</span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">DSH</span>
+          <p>AI Agent Engineer & Open Source Contributor</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/wuhia" target="_blank">GitHub</a>
+          <!-- <a href="https://www.xiaohongshu.com/user/profile/bcefghj" target="_blank">小红书</a> -->
+          <a href="mailto:wuyuanhang23@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 吴远航. Built with passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
